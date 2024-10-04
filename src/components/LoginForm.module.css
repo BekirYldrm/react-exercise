@@ -1,5 +1,5 @@
 /* Dış kapsayıcı */
-.outer-container {
+.outerContainer{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +7,7 @@
 }
 
 /* Login formunun tasarımı */
-.login-container {
+.loginContainer {
     background-color: #fff;
     padding: 40px;
     border-radius: 10px;
@@ -16,7 +16,7 @@
     text-align: center;
 }
 
-.login-container h1 {
+.loginContainer h1 {
     text-align: center;  /* Ortalıyor */
     margin-bottom: 20px; /* Inputlarla aradaki boşluk */
     font-size: 24px;     /* Yazı boyutu */
@@ -24,8 +24,8 @@
     font-weight: 600;    /* Kalın yazı */
 }
 
-.login-container input[type="text"],
-.login-container input[type="password"] {
+.loginContainer input[type="text"],
+.loginContainer input[type="password"] {
     width: 75%;
     padding: 12px;
     margin: 8px 0;
@@ -34,7 +34,7 @@
     font-size: 16px;
 }
 
-.login-container button {
+.loginContainer button {
     width: 50%;
     padding: 12px;
     background-color: #007bff;
@@ -47,12 +47,12 @@
     transition: background-color 0.3s, transform 0.2s;
 }
 
-.login-container button:hover {
+.loginContainer button:hover {
     background-color: #0056b3;
     transform: scale(1.05);
 }
 
-.login-container button:active {
+.loginContainer button:active {
     background-color: #004085;
     transform: scale(1);
 }

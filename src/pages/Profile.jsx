@@ -1,9 +1,14 @@
+import CardList from "../components/CardList";
 import ProfileNav from "../components/ProfileNav";
 
-function ResponsiveAppBar() {
+function Profile() {
 
   return (
-    <ProfileNav />
+    <>
+      <ProfileNav />
+      <CardList />
+    </>
+
   )
 }
-export default ResponsiveAppBar;
+export default Profile;

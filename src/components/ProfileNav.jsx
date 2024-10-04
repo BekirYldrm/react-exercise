@@ -5,6 +5,7 @@ import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Tooltip from '@mui/material/Tooltip';
 import Box from '@mui/material/Box';
+import styles from './ProfileNav.module.css'
 
 const ProfileNav = () => {
   return (
@@ -12,8 +13,8 @@ const ProfileNav = () => {
     <Container maxWidth="xl">
       <Toolbar >
       <Box sx={{ flexGrow: 1 }} />
-          <Tooltip  title={localStorage.getItem("username")}>
-            <IconButton sx={{ p: 0 }}>
+          <Tooltip title={localStorage.getItem("username")}>
+            <IconButton className={styles.iconButton}>
               <Avatar alt="Remy Sharp" src="/src/assets/react.svg" />
             </IconButton>
           </Tooltip>
