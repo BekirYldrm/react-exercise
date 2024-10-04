@@ -10,8 +10,8 @@ const Card = ({title,img,subheading,description}) => {
       <h4 className={styles.smallHeader}>{subheading}</h4>
       <p className={styles.description}>{description}</p>
       <div className={styles.buttonContainer}>
-        <button className={styles.leftButton}>Secondary</button>
-        <button className={styles.rightButton}>Primary</button>
+        <button className={styles.leftButton}>Add</button>
+        <button className={styles.rightButton}>Buy</button>
       </div>
     </div>
   )

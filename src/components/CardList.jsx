@@ -33,7 +33,7 @@ const dataList = [
     {
         id:5,
         img: "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
-        title: "T Shirt Casual Cotton Short ",
+        title: "T Shirt, Casual ",
         subheading: "women's clothing",
         description: "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch."
     }
