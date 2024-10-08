@@ -7,9 +7,9 @@ import Tooltip from '@mui/material/Tooltip';
 import Box from '@mui/material/Box';
 import styles from './ProfileNav.module.css'
 
-const ProfileNav = () => {
+const ProfileNav:React.FC = () => {
   return (
-    <AppBar position="static">
+    <AppBar  position="sticky">
     <Container maxWidth="xl">
       <Toolbar >
       <Box sx={{ flexGrow: 1 }} />

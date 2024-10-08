@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import More from "./pages/More"
-import Product from "./pages/Product"
+import More from "../../pages/More"
+import Product from "../../pages/Product"
 
 // Burda Routing islemleri var Product ve More page`lerde axios orneklerine bak.
 

@@ -1,6 +1,6 @@
+import React from "react"
 
-
-const Text = ({ name }) => {
+const Text: React.FC<{ name: string }> = ({ name }) => {
     return (
         <div>
             {name}
