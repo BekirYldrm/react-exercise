@@ -17,13 +17,19 @@ const Comment: React.FC = () => {
     }, [id])
 
     function sumbitted(event: React.FormEvent<HTMLFormElement>): void {
-        let newComment: CommentData = {
-            id: commentList.length,
-            username: localStorage.getItem("username")!,
-            rating: Number(event.currentTarget.rating.value),
-            comment: event.currentTarget.comment.value
+        let commentValue: string | null = event.currentTarget.comment.value
+        let ratingValue: string | null = event.currentTarget.rating.value
+        console.log(commentValue, ratingValue)
+        if (commentValue  && ratingValue ) {
+            let newComment: CommentData = {
+                id: commentList.length,
+                username: localStorage.getItem("username")!,
+                rating: Number(ratingValue),
+                comment: commentValue
+            }
+            setComments(prev => [...prev, newComment])
         }
-        setComments(prev => [...prev, newComment])
+
         event.preventDefault()
     }
 
