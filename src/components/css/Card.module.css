@@ -2,13 +2,14 @@
   position: relative;
   padding: 1%;
   width: 20%;
-  height: 70%;
+  height: 30rem;
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5%;
   transition: background-color 0.3s ease;
 }
+
 .card * {
   margin: 5% 0% 0%;
 }
@@ -31,14 +32,16 @@
 
 .title {
   font-size: 1.4rem;
+  
 }
 
 .content {
   font-size: 14px;
+  line-height: 150%;
 }
 
 .bottomDiv {
-  position: absolute;
+  /* position: absolute; */
   width: 90%;
   height: 10%;
   flex-direction: row;

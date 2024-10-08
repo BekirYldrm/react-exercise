@@ -2,7 +2,7 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import LoginForm from '../components/LoginForm'
-import { LoginState } from "../utils/type-and-interfaces"
+import { LoginState } from "../utils/Types"
 
 const Login:React.FC = () => {
     const nagivate = useNavigate()

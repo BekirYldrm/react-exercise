@@ -1,13 +1,13 @@
+html {
+    height: auto !important;
+    width: 100%;
+    font-family: 'sans-serif', sans-serif;
+}
+
 body {
     height: 100%;
     width: 100%;
     margin: 0%;
-}
-
-html {
-    height: 100%;
-    width: 100%;
-    font-family: 'Open Sans', sans-serif;
 }
 
 

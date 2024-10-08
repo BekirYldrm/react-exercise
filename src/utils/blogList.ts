@@ -1,6 +1,6 @@
-import { Data } from "./type-and-interfaces";
+import { BlogData } from "./Types";
 
-const dataList: Array<Data> = [
+const blogList: Array<BlogData> = [
     {
         id: 1,
         popularity: 100,
@@ -35,7 +35,7 @@ const dataList: Array<Data> = [
         author: "Bekir Yıldırım",
         date: "February 2024",
         title: "Jacket, Winter Coats ",
-        content: "100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin Friendly, Lightweigt and Warm."
+        content: "100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin Friendly, Lightweigt and Warm.100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin F100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin F100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin F100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin F100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin F100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin F100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin F100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin F100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin F100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin F100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin F100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin F100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin F100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin F"
     },
     {
         id: 5,
@@ -48,4 +48,4 @@ const dataList: Array<Data> = [
     }
 ]
 
-export default dataList;
+export default blogList;

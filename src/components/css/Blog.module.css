@@ -1,0 +1,53 @@
+.blog {
+  height: 100%;
+  width: 50%;
+  padding: 5%;
+  box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.5);
+}
+.blog * {
+  margin: 5%;
+}
+
+.author {
+  display: inline;
+  margin: 5% 1% 5% 1%;
+}
+.date{
+    display: inline;
+    margin: 5% 1% 5% 1%;
+}
+
+.img {
+  display: block;
+  margin: 5% auto;
+  width: 40%;
+  height: 40%;
+}
+
+.title {
+  font-size: 1.5rem;
+  display: block;
+  margin: 5% auto;
+  text-align: center;
+  width: 90%;
+}
+.content {
+    line-height: 150%;
+}
+
+.bottomDiv {
+  border-top: 1px gray solid;
+  height: 10%;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  bottom: 3%;
+}
+.bottomDiv * {
+  margin: 4%;
+}
+.popularity {
+  color: rgb(159, 159, 159);
+  font-size: 1rem;
+  padding: 2%;
+}

@@ -1,5 +1,5 @@
-import { LoginFormProps } from '../utils/type-and-interfaces'
-import styles from './LoginForm.module.css'
+import { LoginFormProps } from '../utils/Types'
+import styles from './css/LoginForm.module.css'
 
 const LoginForm: React.FC<LoginFormProps> = ({ sumbitted, changed }) => {
     return (

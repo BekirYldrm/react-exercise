@@ -5,7 +5,7 @@ import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Tooltip from '@mui/material/Tooltip';
 import Box from '@mui/material/Box';
-import styles from './ProfileNav.module.css'
+import styles from './css/ProfileNav.module.css'
 
 const ProfileNav:React.FC = () => {
   return (

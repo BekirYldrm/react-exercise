@@ -1,23 +1,23 @@
 import React from "react"
-import { Data } from "../utils/type-and-interfaces"
+import { BlogData } from "../utils/Types"
 import Card from "./Card"
-import styles from "./CardList.module.css"
-import dataList from "../utils/dataList"
+import styles from "./css/CardList.module.css"
+import blogList from "../utils/blogList"
 
 const CardList: React.FC = () => {
 
     return (
         <div className={styles.cardContainer}>
-            {dataList.map((data: Data, index) => (
+            {blogList.map((blog: BlogData, index) => (
                 <Card
                     key={index}
-                    id = {data.id}
-                    img={data.img}
-                    title={data.title}
-                    content={data.content}
-                    date={data.date}
-                    author={data.author}
-                    popularity={data.popularity} />
+                    id={blog.id}
+                    img={blog.img}
+                    title={blog.title}
+                    content={blog.content}
+                    date={blog.date}
+                    author={blog.author}
+                    popularity={blog.popularity} />
             ))}
         </div>
     )
