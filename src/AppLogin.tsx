@@ -1,7 +1,8 @@
 import React from 'react'; // React'ı import edin
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "../pages/Login";
-import Profile from "../pages/Profile";
+import Login from "./pages/Login";
+import Profile from "./pages/Profile";
+import More from './pages/More';
 
 const AppLogin:React.FC = () => {
     return (
@@ -9,6 +10,7 @@ const AppLogin:React.FC = () => {
             <Routes>
                 <Route path="/" element={<Login />} />
                 <Route path="/profile" element={<Profile />} />
+                <Route path='/more/:id' element={<More />} />
             </Routes>
         </Router>
     );

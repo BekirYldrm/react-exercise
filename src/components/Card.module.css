@@ -7,60 +7,53 @@
   flex-direction: column;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5%;
+  transition: background-color 0.3s ease;
+}
+.card * {
+  margin: 5% 0% 0%;
 }
 
-.imgWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.topDiv {
+  height: 85%;
+  border-bottom: 1px solid rgb(202, 202, 202);
+}
+.topDiv:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.img {
+  display: block;
   height: 50%;
-  width: 100%;
-}
-
-.cardImg {
-  height: 100%;
   width: 80%;
-  background-color: rgb(216, 216, 216);
-  border-radius: 4%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 5% auto;
 }
 
-.largeHeader {
-  font-size: 24px;
-  margin: 10% 0 0;
+.title {
+  font-size: 1.4rem;
 }
 
-.smallHeader {
-  font-size: 16px;
-  margin: 5% 0%;
-}
-
-.description {
+.content {
   font-size: 14px;
-  margin: 5% 0%;
 }
 
-.buttonContainer {
+.bottomDiv {
   position: absolute;
-  width: 100%;
+  width: 90%;
   height: 10%;
   flex-direction: row;
   display: flex;
   justify-content: left;
-  bottom: 1%;
+  bottom: 3%;
 }
 
-button {
-  margin: 1% 4%;
-  width: 30%;
-  height: 60%;
-  border-radius: 10px;
-  border: none;
+.icon {
+  margin: 5% 0% 0% 5%;
 }
-
-.leftButton {
-  background-color: rgba(199, 197, 197, 0.712);
+.icon:hover {
+  color: rgb(89, 62, 175);
 }
-.rightButton {
-  background-color: rgba(80, 79, 79, 0.712);
+.popularity {
+  color: rgb(200, 198, 196);
+  margin: 7% 0% 0% 5%;
 }

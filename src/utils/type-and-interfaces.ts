@@ -7,17 +7,14 @@ export type LoginFormProps = {
     sumbitted: React.FormEventHandler<HTMLFormElement> | undefined
     changed: React.ChangeEventHandler<HTMLInputElement> | undefined
 }
-export type CardProps = {
-    title: string
+
+export type Data = {
+    id:number
     img: string
-    subheading: string
-    description: string
+    author:string
+    date: string
+    title: string
+    content: string
+    popularity:number
 }
 
-export interface Data {
-    id: number;
-    img: string;
-    title: string;
-    subheading: string;
-    description: string;
-}
