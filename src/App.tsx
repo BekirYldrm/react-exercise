@@ -4,7 +4,7 @@ import Login from "./pages/Login";
 import Profile from "./pages/Profile";
 import More from './pages/More';
 
-const AppLogin:React.FC = () => {
+const App: React.FC = () => {
     return (
         <Router>
             <Routes>
@@ -16,4 +16,4 @@ const AppLogin:React.FC = () => {
     );
 };
 
-export default AppLogin;
+export default App;

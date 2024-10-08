@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import AppLogin from './AppLogin'
+import App from './App'
 
-createRoot(document.getElementById('root')!).render(<AppLogin />)
+createRoot(document.getElementById('root')!).render(<App />)
