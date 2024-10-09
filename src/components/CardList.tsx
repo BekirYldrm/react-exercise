@@ -1,5 +1,5 @@
 import React from "react"
-import { BlogData } from "../utils/Types"
+import { BlogType } from "../utils/Types"
 import Card from "./Card"
 import styles from "./css/CardList.module.css"
 import blogList from "../utils/blogList"
@@ -8,7 +8,7 @@ const CardList: React.FC = () => {
 
     return (
         <div className={styles.cardContainer}>
-            {blogList.map((blog: BlogData, index) => (
+            {blogList.map((blog: BlogType, index) => (
                 <Card
                     key={index}
                     id={blog.id}
@@ -16,7 +16,8 @@ const CardList: React.FC = () => {
                     title={blog.title}
                     content={blog.content}
                     date={blog.date}
-                    author={blog.author}
+                    authorLastName={blog.authorLastName}
+                    authorFirstName={blog.authorFirstName}
                     popularity={blog.popularity} />
             ))}
         </div>

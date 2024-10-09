@@ -1,14 +1,14 @@
 import React from "react";
 import CardList from "../components/CardList";
-import ProfileNav from "../components/ProfileNav";
+import Navbar from "../components/Navbar";
 
-const Profile: React.FC = () => {
+const Home: React.FC = () => {
   return (
     <>
-      <ProfileNav />
+      <Navbar />
       <CardList />
     </>
   );
 };
 
-export default Profile;
+export default Home;

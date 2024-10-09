@@ -11,22 +11,27 @@ export type CommentFormProps = {
     sumbitted: React.FormEventHandler<HTMLFormElement> | undefined
 }
 
-export type BlogData = {
+export type BlogType = {
     id: number
-    img: string
-    author: string
+    authorFirstName: string
+    authorLastName: string
     date: string
+    img: string
     title: string
     content: string
     popularity: number
 }
 
-export type CommentData = {
+export type CommentType = {
     id: number
+    blogId: number
     username: string
-    rating:number | null
+    rating: number
     comment: string
 }
 
-export type BlogSectionData = BlogData & { comments: Array<CommentData> }
-
+export type SavedAndLiked = {
+    id: number
+    blogId: number
+    userId: number
+}

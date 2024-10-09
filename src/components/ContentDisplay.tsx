@@ -1,9 +1,9 @@
 import React from 'react'
+import styles from './css/ContentDisplay.module.css'
 import Blog from './Blog'
-import styles from './css/BlogSection.module.css'
 import Comment from './Comment'
 
-const BlogSection: React.FC = () => {
+const ContentDisplay: React.FC = () => {
     return (
         <div className={styles.container}>
             <Blog />
@@ -12,4 +12,4 @@ const BlogSection: React.FC = () => {
     )
 }
 
-export default BlogSection
+export default ContentDisplay

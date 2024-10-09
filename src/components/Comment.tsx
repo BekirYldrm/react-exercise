@@ -1,28 +1,29 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import styles from "./css/Comment.module.css"
-import { blogSectionList } from '../utils/blogSectionList'
-import { CommentData } from '../utils/Types'
+import { commentList } from '../utils/commentsList'
+import { CommentType } from '../utils/Types'
 import Rating from '@mui/material/Rating'
 import CommentForm from './CommentForm'
 
 const Comment: React.FC = () => {
     let { id } = useParams()
-    let [comments, setComments] = useState<CommentData[]>([])
-    let commentList: CommentData[] = []
+    let [comments, setComments] = useState<CommentType[]>([])
+    let commentsData: CommentType[] = []
 
     useEffect(() => {
-        commentList = blogSectionList.find(blogSection => blogSection.id == Number(id))!.comments
-        setComments(commentList)
+        commentsData = commentList.filter(comment => comment.blogId == Number(id))
+        setComments(commentsData)
     }, [id])
 
     function sumbitted(event: React.FormEvent<HTMLFormElement>): void {
         let commentValue: string | null = event.currentTarget.comment.value
         let ratingValue: string | null = event.currentTarget.rating.value
-        console.log(commentValue, ratingValue)
-        if (commentValue  && ratingValue ) {
-            let newComment: CommentData = {
+
+        if (commentValue && ratingValue) {
+            let newComment: CommentType = {
                 id: commentList.length,
+                blogId: Number(id),
                 username: localStorage.getItem("username")!,
                 rating: Number(ratingValue),
                 comment: commentValue
